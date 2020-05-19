@@ -127,7 +127,6 @@ cd ..
 
 if [[ $BUILD_PYTHON_BINDINGS -eq 1 ]]; then
 	#python bindings
-	python bindings
 	cd gst-python
 	git checkout -t origin/$BRANCH || true
 	export LD_LIBRARY_PATH=/usr/local/lib/ 
