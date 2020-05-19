@@ -7,8 +7,8 @@ if grep -q BCM2708 /proc/cpuinfo; then
     RPI="1"
 fi
 
-BUILD_PYTHON_BINDINGS="0"
-BUILD_OMX_SUPPORT="0"
+BUILD_PYTHON_BINDINGS="1"
+BUILD_OMX_SUPPORT="1"
 
 # Create a log file of the build as well as displaying the build on the tty as it runs
 exec > >(tee build_gstreamer.log)
