@@ -2,7 +2,7 @@
 set -e
 
 BRANCH="1.16"
-if grep -q BCM2708 /proc/cpuinfo; then
+if grep -q BCM2835 /proc/cpuinfo; then
     echo "RPI BUILD!"
     RPI="1"
 fi
