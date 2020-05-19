@@ -139,7 +139,7 @@ if [[ $BUILD_PYTHON_BINDINGS -eq 1 ]]; then
 	cd ..
 fi
 
-if [[ $BUILD_PYTHON_BINDINGS -eq 1 ]]; then
+if [[ $BUILD_OMX_SUPPORT -eq 1 ]]; then
 	#omx support
 	cd gst-omx
 	sudo make uninstall || true
